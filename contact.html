@@ -367,7 +367,7 @@
         var message = $("[name='message']").val().trim();
         if ((name != "") && phone != "") {
             $.ajax({
-                url: "/ruimeng/api/message/leavemessage",
+                url: "http://localhost:18080/ruimeng/api/message/leavemessage",
                 data: JSON.stringify({
                     name: name,
                     phone: phone,
